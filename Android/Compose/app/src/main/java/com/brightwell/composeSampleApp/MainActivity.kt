@@ -24,11 +24,11 @@ import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.brightwell.composeSampleApp.ui.theme.ComposeSampleAppTheme
 import com.brightwell.composeSampleApp.util.getActivity
-import com.brightwell.readyremit.sdk.AccessTokenDetails
-import com.brightwell.readyremit.sdk.AuthenticationResult
-import com.brightwell.readyremit.sdk.ReadyRemit
-import com.brightwell.readyremit.sdk.ReadyRemitConfiguration
-import com.brightwell.readyremit.sdk.TransferSubmissionResult
+import com.paymitto.android.sdk.AccessTokenDetails
+import com.paymitto.android.sdk.AuthenticationResult
+import com.paymitto.android.sdk.PayMitto
+import com.paymitto.android.sdk.PayMittoConfiguration
+import com.paymitto.android.sdk.TransferSubmissionResult
 
 internal class MainActivity : ComponentActivity() {
 
@@ -79,7 +79,7 @@ internal fun HomeView(
         Button(
             modifier = Modifier.padding(16.dp), onClick = {
                 if (activity != null) {
-                    ReadyRemit.startSdk(
+                    PayMitto.startSdk(
                         activity = activity,
                         readyRemitConfiguration = state.config
                     )
@@ -98,7 +98,7 @@ internal fun HomePreview() {
         HomeView(
             modifier = Modifier,
             state = MainState(
-                config = ReadyRemitConfiguration(
+                config = PayMittoConfiguration(
                     authenticateIntoTheSdk = {
                         AuthenticationResult.Success(
                             AccessTokenDetails(

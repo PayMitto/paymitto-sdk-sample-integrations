@@ -7,7 +7,7 @@ espressoCore = "3.6.1"
 lifecycleRuntimeKtx = "2.8.7"
 composeBom = "2025.11.01"
 ksp = "2.1.0-1.0.29"
-readyRemitSDK = "10.0.0"
+payMittoSDK = "11.0.0"
 okhttp = "4.12.0"
 profiler = "1.0.8"
 retrofit = "3.0.0"
@@ -35,7 +35,7 @@ retrofit-converter-moshi = { module = "com.squareup.retrofit2:converter-moshi", 
 moshi-core = { module = "com.squareup.moshi:moshi", version.ref = "moshi" }
 moshi-adapters = { module = "com.squareup.moshi:moshi-adapters", version.ref = "moshi" }
 moshi-kotlin-codegen = { module = "com.squareup.moshi:moshi-kotlin-codegen", version.ref = "moshi" }
-readyremit-sdk = { module = "io.github.brightwellpayments:ReadyRemitSDK", version.ref = "readyRemitSDK" }
+payMitto-sdk = { module = "com.paymitto.android:PayMittoSDK", version.ref = "payMittoSDK" }
 
 
 [plugins]

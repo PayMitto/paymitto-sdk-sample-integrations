@@ -1,5 +1,6 @@
 package com.brightwell.composeSampleApp
 
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.brightwell.composeSampleApp.network.ReadyRemitService
@@ -7,20 +8,20 @@ import com.brightwell.composeSampleApp.network.model.AuthRequest
 import com.brightwell.composeSampleApp.network.model.ReadQuoteDetailsResponse
 import com.brightwell.composeSampleApp.network.model.TransferRequest
 import com.brightwell.readyremit.androisample.network.model.ErrorResponse
-import com.brightwell.readyremit.sdk.AccessTokenDetails
-import com.brightwell.readyremit.sdk.AuthenticationResult
-import com.brightwell.readyremit.sdk.Localization
-import com.brightwell.readyremit.sdk.ReadyRemit
-import com.brightwell.readyremit.sdk.ReadyRemitConfiguration
-import com.brightwell.readyremit.sdk.ReadyRemitEnvironment
-import com.brightwell.readyremit.sdk.ReadyRemitError
-import com.brightwell.readyremit.sdk.ReadyRemitEvent
-import com.brightwell.readyremit.sdk.ReadyRemitTransferRequest
-import com.brightwell.readyremit.sdk.SDKClosed
-import com.brightwell.readyremit.sdk.SDKLaunched
-import com.brightwell.readyremit.sdk.SourceAccount
-import com.brightwell.readyremit.sdk.SupportedAppearance
-import com.brightwell.readyremit.sdk.TransferSubmissionResult
+import com.paymitto.android.sdk.AccessTokenDetails
+import com.paymitto.android.sdk.AuthenticationResult
+import com.paymitto.android.sdk.Localization
+import com.paymitto.android.sdk.PayMitto
+import com.paymitto.android.sdk.PayMittoConfiguration
+import com.paymitto.android.sdk.PayMittoEnvironment
+import com.paymitto.android.sdk.PayMittoError
+import com.paymitto.android.sdk.PayMittoEvent
+import com.paymitto.android.sdk.PayMittoTransferRequest
+import com.paymitto.android.sdk.SDKClosed
+import com.paymitto.android.sdk.SDKLaunched
+import com.paymitto.android.sdk.SourceAccount
+import com.paymitto.android.sdk.SupportedAppearance
+import com.paymitto.android.sdk.TransferSubmissionResult
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.Types.newParameterizedType
 import kotlinx.coroutines.Dispatchers
@@ -54,10 +55,10 @@ class MainViewModel : ViewModel() {
             .build().create(ReadyRemitService::class.java)
     }
 
-    fun createSdkConfig(): ReadyRemitConfiguration {
-        return ReadyRemitConfiguration(
+    fun createSdkConfig(): PayMittoConfiguration {
+        return PayMittoConfiguration(
             defaultCountry = null, // CountryIso3Code.USA
-            environment = ReadyRemitEnvironment.SANDBOX,
+            environment = PayMittoEnvironment.SANDBOX,
             fixedRemittanceServiceProvider = null, // RemittanceServiceProvider.VISA
             fixedTransferMethod = null, // allows any transfer method
             localization = Localization.enUS,
@@ -98,7 +99,7 @@ class MainViewModel : ViewModel() {
                     } catch (e: Exception) {
                         withContext(Dispatchers.Main) {
                             AuthenticationResult.Error(
-                                ReadyRemitError(
+                                PayMittoError(
                                     code = "",
                                     message = e.message.orEmpty(),
                                     description = e.message.orEmpty()
@@ -111,15 +112,15 @@ class MainViewModel : ViewModel() {
             submitTransfer = { transferRequest ->
                 try {
                     val quoteDetails = readQuoteDetails(transferRequest.quoteHistoryId)
-                    return@ReadyRemitConfiguration submitReadyRemitTransfer(
+                    return@PayMittoConfiguration submitReadyRemitTransfer(
                         transferRequest = transferRequest,
                         quoteDetails = quoteDetails
                     )
                 } catch (e: QuoteDetailsException) {
-                    return@ReadyRemitConfiguration TransferSubmissionResult.Error(e.error)
+                    return@PayMittoConfiguration TransferSubmissionResult.Error(e.error)
                 }
             },
-            sdkEventListener = { event: ReadyRemitEvent ->
+            sdkEventListener = { event: PayMittoEvent ->
                 viewModelScope.launch {
                     when (event) {
                         SDKLaunched -> {
@@ -141,7 +142,7 @@ class MainViewModel : ViewModel() {
         val response = service.readQuoteDetails(
             url = "https://sandbox-api.readyremit.com/v1/quote/$quoteHistoryId",
             token = "Bearer $tokenValue",
-            acceptLanguage = ReadyRemit.getSdkLanguageLocale()?.getLocalizationForApi()
+            acceptLanguage = PayMitto.getSdkLanguageLocale()?.getLocalizationForApi()
                 ?: Localization.enUS.getLocalizationForApi(), // or the language you set in ReadyRemitConfiguration
             contentType = "application/json"
         )
@@ -153,7 +154,7 @@ class MainViewModel : ViewModel() {
             val errorResponse = mapError(response.errorBody()?.string())
 
             throw QuoteDetailsException(
-                ReadyRemitError(
+                PayMittoError(
                     errorResponse.code,
                     errorResponse.message,
                     errorResponse.description
@@ -163,7 +164,7 @@ class MainViewModel : ViewModel() {
     }
 
     private suspend fun submitReadyRemitTransfer(
-        transferRequest: ReadyRemitTransferRequest,
+        transferRequest: PayMittoTransferRequest,
         quoteDetails: ReadQuoteDetailsResponse
     ): TransferSubmissionResult {
         val response = service.transfer(
@@ -189,7 +190,7 @@ class MainViewModel : ViewModel() {
             // Parsing json error response
             val errorResponse = mapError(response.errorBody()?.string())
             return TransferSubmissionResult.Error(
-                ReadyRemitError(
+                PayMittoError(
                     errorResponse.code,
                     errorResponse.message,
                     errorResponse.description
@@ -211,5 +212,5 @@ class MainViewModel : ViewModel() {
 }
 
 data class QuoteDetailsException(
-    val error: ReadyRemitError
+    val error: PayMittoError
 ) : Throwable("Failed to read quote details: ${error.message}")

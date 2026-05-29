@@ -77,5 +77,5 @@ dependencies {
     debugImplementation(libs.androidx.ui.test.manifest)
 
     // ReadyRemit SDK
-    implementation(libs.readyremit.sdk)
+    implementation(libs.payMitto.sdk)
 }
