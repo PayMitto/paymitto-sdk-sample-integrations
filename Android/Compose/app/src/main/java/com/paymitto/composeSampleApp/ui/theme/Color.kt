@@ -1,4 +1,4 @@
-package com.brightwell.composeSampleApp.ui.theme
+package com.paymitto.composeSampleApp.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

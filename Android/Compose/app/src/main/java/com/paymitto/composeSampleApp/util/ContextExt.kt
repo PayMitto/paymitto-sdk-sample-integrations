@@ -1,4 +1,4 @@
-package com.brightwell.composeSampleApp.util
+package com.paymitto.composeSampleApp.util
 
 import android.content.Context
 import android.content.ContextWrapper

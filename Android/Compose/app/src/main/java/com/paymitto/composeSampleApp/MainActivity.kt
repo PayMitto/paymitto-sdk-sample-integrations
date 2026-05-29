@@ -1,4 +1,4 @@
-package com.brightwell.composeSampleApp
+package com.paymitto.composeSampleApp
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,8 +22,8 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.brightwell.composeSampleApp.ui.theme.ComposeSampleAppTheme
-import com.brightwell.composeSampleApp.util.getActivity
+import com.paymitto.composeSampleApp.ui.theme.ComposeSampleAppTheme
+import com.paymitto.composeSampleApp.util.getActivity
 import com.paymitto.android.sdk.AccessTokenDetails
 import com.paymitto.android.sdk.AuthenticationResult
 import com.paymitto.android.sdk.PayMitto

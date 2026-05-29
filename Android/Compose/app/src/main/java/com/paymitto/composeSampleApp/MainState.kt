@@ -1,4 +1,4 @@
-package com.brightwell.composeSampleApp
+package com.paymitto.composeSampleApp
 
 import com.paymitto.android.sdk.PayMittoConfiguration
 
