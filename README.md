@@ -1,0 +1,41 @@
+# PayMitto - SDK Integration Example Repository 
+
+To help our customers integrate with the PayMitto SDK, we have created the following repository of integration examples. We’ve put together some sample projects that walk through how to integrate the PayMitto SDK into your iOS or Android app using a variety programming languages.
+
+## What is PayMitto?
+
+PayMitto is a powerful solution for global remittances that helps you quickly and seamlessly integrate cross-border transfers into your product via API or SDK. Our SDK offers an end-to-end flow for submitting a transfer request, making it easy to get up and running with minimal development time. Additionally, our API offers complete flexibility and control over the user flow for more advanced use cases.
+
+Some of the benefits of using PayMitto include:
+
+- Easy-to-integrate technology with brand customization options
+- Access to over 120 high-demand and complex markets
+- Multiple payout choices, including cash pickup, bank transfer, and more
+- Compliance monitoring and regulation adherence
+- Secure, reliable, and stable network connectivity
+- Payout in over 70 currencies
+- Real-time funding available in 14 markets
+
+PayMitto can be used for a variety of purposes and endpoints, including person-to-person, person-to-business, business-to-person, business-to-business, and government entities.
+
+## SDK Integration Examples
+
+This repository contains examples of how to integrate the PayMitto SDK into your app using a variety of programming languages. Each example is organized by platform and programming language.
+
+ ### iOS Examples
+
+- [UIKit + Cocoapods Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/iOS/UIKit): demonstrates how to integrate the PayMitto SDK into an iOS app using UIKit.
+- [SwiftUI + Swift Package Manager Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/iOS/SwiftUI): demonstrates how to integrate the PayMitto SDK into an iOS app using SwiftUI.
+
+### Android Examples
+
+- [Compose Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/Android/Compose): demonstrates how to integrate the PayMitto SDK into an Android app using Kotlin and Jetpack Compose.
+
+### React Native Example
+
+- [React Native Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/ReactNative): demonstrates how to integrate the PayMitto SDK into a React Native app.
+- [Expo React Native Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/Expo): demonstrates how to integrate the PayMitto SDK into a Expo React Native app.
+
+## Conclusion
+
+We appreciate your consideration of PayMitto as your global remittance solution. We hope these examples provide a useful starting point for integrating the PayMitto SDK into your app. If you have any questions or feedback, please contact us at [support@paymitto.com](mailto:support@paymitto.com).
