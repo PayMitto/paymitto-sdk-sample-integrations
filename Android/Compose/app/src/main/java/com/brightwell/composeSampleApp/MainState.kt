@@ -1,7 +1,7 @@
 package com.brightwell.composeSampleApp
 
-import com.brightwell.readyremit.sdk.ReadyRemitConfiguration
+import com.paymitto.android.sdk.PayMittoConfiguration
 
 data class MainState(
-    val config: ReadyRemitConfiguration
+    val config: PayMittoConfiguration
 )
