@@ -1,0 +1,2 @@
+${PODS_XCFRAMEWORKS_BUILD_DIR}/ReadyRemitSDK/ReadyRemitSDK.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/ReadyRemitSDK/VisaSensoryBranding.framework

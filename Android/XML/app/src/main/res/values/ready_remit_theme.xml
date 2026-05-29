@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ReadyRemit" parent="Theme.ReadyRemit.Light">
+        <item name="rrmBackgroundColor">#F3F4F6</item>
+        <item name="rrmForegroundColor">#FFFFFF</item>
+        <item name="rrmButtonTextColor">#FFFFFF</item>
+        <item name="rrmDangerColor">#AA220F</item>
+        <item name="rrmDangerLightColor">#ECDFDF</item>
+        <item name="rrmDividerColor">#E2E2E2</item>
+        <item name="rrmIconColor">#444444</item>
+        <item name="rrmInputLineColor">#858585</item>
+        <item name="rrmPrimaryColor">#2563EB</item>
+        <item name="rrmPrimaryLightColor">#6B8DD6</item>
+        <item name="rrmSuccessColor">#008761</item>
+        <item name="rrmTextColor">#0E0F0C</item>
+        <item name="rrmTextSecondaryColor">#454545</item>
+    </style>
+</resources>

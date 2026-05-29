@@ -1,0 +1,15 @@
+{
+  "originHash" : "78200944136a1f0da4a989e313ff505812a79042fb1ab44ef1c71d124c1d46ad",
+  "pins" : [
+    {
+      "identity" : "readyremit-ios-sdk-spm",
+      "kind" : "remoteSourceControl",
+      "location" : "git@github.com:mmohrman-paymitto/readyremit-ios-sdk-spm.git",
+      "state" : {
+        "revision" : "c709f18f1af217db385e3ba695611e13a4996dcd",
+        "version" : "11.0.0"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -1,0 +1,3 @@
+${PODS_ROOT}/Target Support Files/ReadyRemitSDK/ReadyRemitSDK-xcframeworks.sh
+${PODS_ROOT}/ReadyRemitSDK/ReadyRemitSDK.xcframework
+${PODS_ROOT}/ReadyRemitSDK/VisaSensoryBranding.xcframework
