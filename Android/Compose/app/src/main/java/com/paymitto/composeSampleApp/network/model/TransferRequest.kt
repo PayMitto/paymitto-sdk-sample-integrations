@@ -1,4 +1,4 @@
-package com.brightwell.composeSampleApp.network.model
+package com.paymitto.composeSampleApp.network.model
 
 import com.squareup.moshi.JsonClass
 

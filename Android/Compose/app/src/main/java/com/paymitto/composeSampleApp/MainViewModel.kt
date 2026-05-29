@@ -1,13 +1,12 @@
-package com.brightwell.composeSampleApp
+package com.paymitto.composeSampleApp
 
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.brightwell.composeSampleApp.network.ReadyRemitService
-import com.brightwell.composeSampleApp.network.model.AuthRequest
-import com.brightwell.composeSampleApp.network.model.ReadQuoteDetailsResponse
-import com.brightwell.composeSampleApp.network.model.TransferRequest
-import com.brightwell.readyremit.androisample.network.model.ErrorResponse
+import com.paymitto.composeSampleApp.network.ReadyRemitService
+import com.paymitto.composeSampleApp.network.model.AuthRequest
+import com.paymitto.composeSampleApp.network.model.ReadQuoteDetailsResponse
+import com.paymitto.composeSampleApp.network.model.TransferRequest
+import com.paymitto.readyremit.androisample.network.model.ErrorResponse
 import com.paymitto.android.sdk.AccessTokenDetails
 import com.paymitto.android.sdk.AuthenticationResult
 import com.paymitto.android.sdk.Localization
