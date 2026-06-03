@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		57144D7C2FC501BC00CF7718 /* PayMittoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 57144D7B2FC501BC00CF7718 /* PayMittoSDK */; };
+		5731DCCD2FCFB15B0081FE2B /* PayMittoSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 5731DCCC2FCFB15B0081FE2B /* PayMittoSDK */; };
 /* End PBXBuildFile section */
-
 
 /* Begin PBXCopyFilesBuildPhase section */
 		579CBDB22EA98E7E00EEF760 /* Embed Frameworks */ = {
@@ -26,16 +25,27 @@
 
 /* Begin PBXFileReference section */
 		57363B612E69ED5A002D0DCA /* PayMittoHost.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayMittoHost.app; sourceTree = BUILT_PRODUCTS_DIR; };
-
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		57EFBA7D2FCF98F10024823F /* Exceptions for "PayMittoHost" folder in "PayMittoHost" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Secrets.swift.template,
+			);
+			target = 57363B602E69ED5A002D0DCA /* PayMittoHost */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		57363B632E69ED5A002D0DCA /* PayMittoHost */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				57EFBA7D2FCF98F10024823F /* Exceptions for "PayMittoHost" folder in "PayMittoHost" target */,
+			);
 			path = PayMittoHost;
 			sourceTree = "<group>";
 		};
-
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,11 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57144D7C2FC501BC00CF7718 /* PayMittoSDK in Frameworks */,
+				5731DCCD2FCFB15B0081FE2B /* PayMittoSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -88,13 +97,12 @@
 			);
 			name = PayMittoHost;
 			packageProductDependencies = (
-				57144D7B2FC501BC00CF7718 /* PayMittoSDK */,
+				5731DCCC2FCFB15B0081FE2B /* PayMittoSDK */,
 			);
 			productName = PayMittoHost;
 			productReference = 57363B612E69ED5A002D0DCA /* PayMittoHost.app */;
 			productType = "com.apple.product-type.application";
 		};
-
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -108,7 +116,6 @@
 					57363B602E69ED5A002D0DCA = {
 						CreatedOnToolsVersion = 26.0;
 					};
-
 				};
 			};
 			buildConfigurationList = 57363B5C2E69ED5A002D0DCA /* Build configuration list for PBXProject "PayMittoHost" */;
@@ -121,7 +128,7 @@
 			mainGroup = 57363B582E69ED5A002D0DCA;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				57144D7A2FC501BC00CF7718 /* XCRemoteSwiftPackageReference "readyremit-ios-sdk-spm" */,
+				5731DCCB2FCFB15B0081FE2B /* XCRemoteSwiftPackageReference "paymitto-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 57363B622E69ED5A002D0DCA /* Products */;
@@ -141,7 +148,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -152,9 +158,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-
 /* End PBXSourcesBuildPhase section */
-
 
 /* Begin XCBuildConfiguration section */
 		57363B802E69ED5B002D0DCA /* Debug */ = {
@@ -379,7 +383,6 @@
 			};
 			name = Release;
 		};
-
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -401,13 +404,12 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		57144D7A2FC501BC00CF7718 /* XCRemoteSwiftPackageReference "readyremit-ios-sdk-spm" */ = {
+		5731DCCB2FCFB15B0081FE2B /* XCRemoteSwiftPackageReference "paymitto-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:mmohrman-paymitto/readyremit-ios-sdk-spm.git";
+			repositoryURL = "https://github.com/PayMitto/paymitto-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 11.0.0;
@@ -416,9 +418,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		57144D7B2FC501BC00CF7718 /* PayMittoSDK */ = {
+		5731DCCC2FCFB15B0081FE2B /* PayMittoSDK */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 57144D7A2FC501BC00CF7718 /* XCRemoteSwiftPackageReference "readyremit-ios-sdk-spm" */;
+			package = 5731DCCB2FCFB15B0081FE2B /* XCRemoteSwiftPackageReference "paymitto-ios" */;
 			productName = PayMittoSDK;
 		};
 /* End XCSwiftPackageProductDependency section */

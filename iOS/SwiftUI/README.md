@@ -14,9 +14,9 @@ This app serves as a reference implementation for integrating the PayMitto SDK i
 
 ## Requirements
 
-- iOS 17.0+
-- Xcode 15.0+
+- Xcode 26.0+
 - Swift 5.9+
+- iOS 17.0+
 
 ## Setup
 
@@ -44,9 +44,9 @@ This app serves as a reference implementation for integrating the PayMitto SDK i
    ```
    Then edit `Secrets.swift` with your values:
    ```swift
-   static let clientId     = "<your_client_id>"
+   static let clientId = "<your_client_id>"
    static let clientSecret = "<your_client_secret>"
-   static let senderId     = "<your_sender_id>"
+   static let senderId = "<your_sender_id>"
    ```
    `Secrets.swift` is gitignored and will never be committed.
 
@@ -174,4 +174,4 @@ configuration: .init(environment: .production)
 
 ## License
 
-Copyright © 2026 PayMitto. All rights reserved.
+Copyright © 2026 PayMitto, LLC. All rights reserved.

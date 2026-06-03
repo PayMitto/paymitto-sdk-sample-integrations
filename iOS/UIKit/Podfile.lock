@@ -1,0 +1,22 @@
+PODS:
+  - PayMittoSDK (11.0.0)
+
+DEPENDENCIES:
+  - PayMittoSDK (from `https://github.com/PayMitto/paymitto-ios.git`, tag `11.0.0`)
+
+EXTERNAL SOURCES:
+  PayMittoSDK:
+    :git: https://github.com/PayMitto/paymitto-ios.git
+    :tag: 11.0.0
+
+CHECKOUT OPTIONS:
+  PayMittoSDK:
+    :git: https://github.com/PayMitto/paymitto-ios.git
+    :tag: 11.0.0
+
+SPEC CHECKSUMS:
+  PayMittoSDK: 36b295c087b2afffae0a3c1d1563f3ffca6b6521
+
+PODFILE CHECKSUM: 567c90729600c777ce675240c1086dd89e20a8c9
+
+COCOAPODS: 1.16.2
