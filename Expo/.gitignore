@@ -17,6 +17,10 @@ expo-env.d.ts
 *.p12
 *.key
 *.mobileprovision
+*.keystore
+**/Podfile.lock
+**/Package.resolved
+**/.swiftpm/
 
 # Metro
 .metro-health-check*
