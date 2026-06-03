@@ -1,12 +1,12 @@
 {
-  "originHash" : "78200944136a1f0da4a989e313ff505812a79042fb1ab44ef1c71d124c1d46ad",
+  "originHash" : "1bdf9c4ba5e5d96ab4c80edac4a156be466149017512991f96cd512444b5ddd5",
   "pins" : [
     {
-      "identity" : "readyremit-ios-sdk-spm",
+      "identity" : "paymitto-ios",
       "kind" : "remoteSourceControl",
-      "location" : "git@github.com:mmohrman-paymitto/readyremit-ios-sdk-spm.git",
+      "location" : "https://github.com/PayMitto/paymitto-ios",
       "state" : {
-        "revision" : "c709f18f1af217db385e3ba695611e13a4996dcd",
+        "revision" : "8d59aa59fd2a712302bd839d2b077d965bd36fee",
         "version" : "11.0.0"
       }
     }

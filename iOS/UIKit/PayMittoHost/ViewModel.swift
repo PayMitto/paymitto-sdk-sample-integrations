@@ -2,7 +2,7 @@
 //  ViewModel.swift
 //  PayMittoHost
 //
-//  Created by Matthew Mohrman on 10/24/25.
+//  Created by Franco Cadillo on 3/6/26.
 //
 
 import PayMittoSDK
