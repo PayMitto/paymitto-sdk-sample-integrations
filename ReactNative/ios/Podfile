@@ -5,14 +5,14 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-require_relative '../node_modules/react-native-ready-remit-sdk/ios/embed_readyremit'
+require_relative '../node_modules/react-native-paymitto-sdk/ios/embed_paymitto'
 
 platform :ios, '16.0'
 prepare_react_native_project!
 
 use_frameworks! :linkage => :dynamic
 
-target 'ReadyRemitReactNativeSample' do
+target 'PayMittoReactNativeSample' do
   config = use_native_modules!
 
   use_react_native!(
@@ -26,6 +26,6 @@ target 'ReadyRemitReactNativeSample' do
       config[:reactNativePath],
       :mac_catalyst_enabled => false,
     )
-    embed_readyremit_framework!(installer)
+    embed_paymitto_framework!(installer)
   end
 end

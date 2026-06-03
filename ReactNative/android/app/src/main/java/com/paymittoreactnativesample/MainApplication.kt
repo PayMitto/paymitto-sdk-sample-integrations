@@ -1,4 +1,4 @@
-package com.readyremitreactnativesample
+package com.paymittoreactnativesample
 
 import android.app.Application
 import com.facebook.react.PackageList

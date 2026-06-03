@@ -11,19 +11,19 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		9C71C659E8E64E428D9F53F4 /* Pods_ReadyRemitReactNativeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A06803DA02E289F6BCA85A /* Pods_ReadyRemitReactNativeSample.framework */; };
+		9C71C659E8E64E428D9F53F4 /* Pods_PayMittoReactNativeSample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A06803DA02E289F6BCA85A /* Pods_PayMittoReactNativeSample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		13B07F961A680F5B00A75B9A /* ReadyRemitReactNativeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadyRemitReactNativeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ReadyRemitReactNativeSample/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReadyRemitReactNativeSample/Info.plist; sourceTree = "<group>"; };
-		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ReadyRemitReactNativeSample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		3B4392A12AC88292D35C810B /* Pods-ReadyRemitReactNativeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadyRemitReactNativeSample.debug.xcconfig"; path = "Target Support Files/Pods-ReadyRemitReactNativeSample/Pods-ReadyRemitReactNativeSample.debug.xcconfig"; sourceTree = "<group>"; };
-		5709B34CF0A7D63546082F79 /* Pods-ReadyRemitReactNativeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadyRemitReactNativeSample.release.xcconfig"; path = "Target Support Files/Pods-ReadyRemitReactNativeSample/Pods-ReadyRemitReactNativeSample.release.xcconfig"; sourceTree = "<group>"; };
-		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ReadyRemitReactNativeSample/AppDelegate.swift; sourceTree = "<group>"; };
-		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReadyRemitReactNativeSample/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		94A06803DA02E289F6BCA85A /* Pods_ReadyRemitReactNativeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadyRemitReactNativeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* PayMittoReactNativeSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayMittoReactNativeSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = PayMittoReactNativeSample/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PayMittoReactNativeSample/Info.plist; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = PayMittoReactNativeSample/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		3B4392A12AC88292D35C810B /* Pods-PayMittoReactNativeSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayMittoReactNativeSample.debug.xcconfig"; path = "Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample.debug.xcconfig"; sourceTree = "<group>"; };
+		5709B34CF0A7D63546082F79 /* Pods-PayMittoReactNativeSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PayMittoReactNativeSample.release.xcconfig"; path = "Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample.release.xcconfig"; sourceTree = "<group>"; };
+		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = PayMittoReactNativeSample/AppDelegate.swift; sourceTree = "<group>"; };
+		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = PayMittoReactNativeSample/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94A06803DA02E289F6BCA85A /* Pods_PayMittoReactNativeSample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PayMittoReactNativeSample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -32,14 +32,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C71C659E8E64E428D9F53F4 /* Pods_ReadyRemitReactNativeSample.framework in Frameworks */,
+				9C71C659E8E64E428D9F53F4 /* Pods_PayMittoReactNativeSample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		13B07FAE1A68108700A75B9A /* ReadyRemitReactNativeSample */ = {
+		13B07FAE1A68108700A75B9A /* PayMittoReactNativeSample */ = {
 			isa = PBXGroup;
 			children = (
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -48,14 +48,14 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
 			);
-			name = ReadyRemitReactNativeSample;
+			name = PayMittoReactNativeSample;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				94A06803DA02E289F6BCA85A /* Pods_ReadyRemitReactNativeSample.framework */,
+				94A06803DA02E289F6BCA85A /* Pods_PayMittoReactNativeSample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -70,7 +70,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* ReadyRemitReactNativeSample */,
+				13B07FAE1A68108700A75B9A /* PayMittoReactNativeSample */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
@@ -84,7 +84,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* ReadyRemitReactNativeSample.app */,
+				13B07F961A680F5B00A75B9A /* PayMittoReactNativeSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,8 +92,8 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3B4392A12AC88292D35C810B /* Pods-ReadyRemitReactNativeSample.debug.xcconfig */,
-				5709B34CF0A7D63546082F79 /* Pods-ReadyRemitReactNativeSample.release.xcconfig */,
+				3B4392A12AC88292D35C810B /* Pods-PayMittoReactNativeSample.debug.xcconfig */,
+				5709B34CF0A7D63546082F79 /* Pods-PayMittoReactNativeSample.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		13B07F861A680F5B00A75B9A /* ReadyRemitReactNativeSample */ = {
+		13B07F861A680F5B00A75B9A /* PayMittoReactNativeSample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReadyRemitReactNativeSample" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PayMittoReactNativeSample" */;
 			buildPhases = (
 				C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
@@ -114,14 +114,15 @@
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 				B2D4AE8962F250ABE2CA86C1 /* [ReadyRemit] Embed SPM Framework */,
 				24A49946F741BDD8FB14BABE /* [ReadyRemit] Embed SPM Frameworks */,
+				80B31DDDF029E773E17D016D /* [PayMitto] Embed SPM Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ReadyRemitReactNativeSample;
-			productName = ReadyRemitReactNativeSample;
-			productReference = 13B07F961A680F5B00A75B9A /* ReadyRemitReactNativeSample.app */;
+			name = PayMittoReactNativeSample;
+			productName = PayMittoReactNativeSample;
+			productReference = 13B07F961A680F5B00A75B9A /* PayMittoReactNativeSample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -137,7 +138,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReadyRemitReactNativeSample" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "PayMittoReactNativeSample" */;
 			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -150,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* ReadyRemitReactNativeSample */,
+				13B07F861A680F5B00A75B9A /* PayMittoReactNativeSample */,
 			);
 		};
 /* End PBXProject section */
@@ -191,15 +192,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadyRemitReactNativeSample/Pods-ReadyRemitReactNativeSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadyRemitReactNativeSample/Pods-ReadyRemitReactNativeSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadyRemitReactNativeSample/Pods-ReadyRemitReactNativeSample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		24A49946F741BDD8FB14BABE /* [ReadyRemit] Embed SPM Frameworks */ = {
@@ -219,6 +220,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "DEST=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nFRAMEWORKS=(\"ReadyRemitSDK\" \"VisaSensoryBranding\")\n\nmkdir -p \"$DEST\"\n\nfor FWNAME in \"${FRAMEWORKS[@]}\"; do\n  # Search in multiple locations where SPM may place built frameworks\n  SRC=\"\"\n  for SEARCH_DIR in \\\n    \"${BUILT_PRODUCTS_DIR}/PackageFrameworks\" \\\n    \"${BUILT_PRODUCTS_DIR}\" \\\n    \"${BUILT_PRODUCTS_DIR}/RNReadyRemitSdk\" \\\n    \"${BUILT_PRODUCTS_DIR}/ReadyRemitSdk\"; do\n    if [ -d \"${SEARCH_DIR}/${FWNAME}.framework\" ]; then\n      SRC=\"${SEARCH_DIR}/${FWNAME}.framework\"\n      break\n    fi\n  done\n\n  if [ -z \"$SRC\" ]; then\n    echo \"warning: ${FWNAME}.framework not found — SDK may crash at launch.\"\n    continue\n  fi\n\n  rsync -av --delete \"$SRC\" \"$DEST/\"\n\n  if [ \"${CODE_SIGNING_REQUIRED:-}\" == \"YES\" ] && [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ]; then\n    /usr/bin/codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements \"${DEST}/${FWNAME}.framework\"\n  fi\ndone\n";
+		};
+		80B31DDDF029E773E17D016D /* [PayMitto] Embed SPM Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[PayMitto] Embed SPM Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "DEST=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nFRAMEWORKS=(\"PayMittoSDK\" \"VisaSensoryBranding\")\n\nmkdir -p \"$DEST\"\n\nfor FWNAME in \"${FRAMEWORKS[@]}\"; do\n  # Search in multiple locations where SPM may place built frameworks\n  SRC=\"\"\n  for SEARCH_DIR in \\\n    \"${BUILT_PRODUCTS_DIR}/PackageFrameworks\" \\\n    \"${BUILT_PRODUCTS_DIR}\" \\\n    \"${BUILT_PRODUCTS_DIR}/RNPayMittoSdk\" \\\n    \"${BUILT_PRODUCTS_DIR}/PayMittoSdk\"; do\n    if [ -d \"${SEARCH_DIR}/${FWNAME}.framework\" ]; then\n      SRC=\"${SEARCH_DIR}/${FWNAME}.framework\"\n      break\n    fi\n  done\n\n  if [ -z \"$SRC\" ]; then\n    echo \"warning: ${FWNAME}.framework not found — SDK may crash at launch.\"\n    continue\n  fi\n\n  rsync -av --delete \"$SRC\" \"$DEST/\"\n\n  if [ \"${CODE_SIGNING_REQUIRED:-}\" == \"YES\" ] && [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ]; then\n    /usr/bin/codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements \"${DEST}/${FWNAME}.framework\"\n  fi\ndone\n";
 		};
 		B2D4AE8962F250ABE2CA86C1 /* [ReadyRemit] Embed SPM Framework */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -253,7 +272,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ReadyRemitReactNativeSample-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-PayMittoReactNativeSample-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -266,15 +285,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadyRemitReactNativeSample/Pods-ReadyRemitReactNativeSample-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadyRemitReactNativeSample/Pods-ReadyRemitReactNativeSample-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadyRemitReactNativeSample/Pods-ReadyRemitReactNativeSample-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -293,14 +312,14 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-ReadyRemitReactNativeSample.debug.xcconfig */;
+			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-PayMittoReactNativeSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X2KQ486G2F;
 				ENABLE_BITCODE = NO;
-				INFOPLIST_FILE = ReadyRemitReactNativeSample/Info.plist;
+				INFOPLIST_FILE = PayMittoReactNativeSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +332,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ReadyRemitReactNativeSample;
+				PRODUCT_NAME = PayMittoReactNativeSample;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -322,13 +341,13 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-ReadyRemitReactNativeSample.release.xcconfig */;
+			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-PayMittoReactNativeSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X2KQ486G2F;
-				INFOPLIST_FILE = ReadyRemitReactNativeSample/Info.plist;
+				INFOPLIST_FILE = PayMittoReactNativeSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,7 +360,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = ReadyRemitReactNativeSample;
+				PRODUCT_NAME = PayMittoReactNativeSample;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -520,7 +539,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReadyRemitReactNativeSample" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "PayMittoReactNativeSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -529,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReadyRemitReactNativeSample" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "PayMittoReactNativeSample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
