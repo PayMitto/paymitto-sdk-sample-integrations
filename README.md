@@ -24,19 +24,19 @@ This repository contains examples of how to integrate the ReadyRemit SDK into yo
 
  ### iOS Examples
 
-- [UIKit + Cocoapods Example](https://github.com/BrightwellPayments/readyremit-sdk-example-apps/tree/main/iOS/UIKit): demonstrates how to integrate the ReadyRemit SDK into an iOS app using UIKit.
-- [SwiftUI + Swift Package Manager Example](https://github.com/BrightwellPayments/readyremit-sdk-example-apps/tree/main/iOS/SwiftUI): demonstrates how to integrate the ReadyRemit SDK into an iOS app using SwiftUI.
+- [UIKit + Cocoapods Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/iOS/UIKit): demonstrates how to integrate the ReadyRemit SDK into an iOS app using UIKit.
+- [SwiftUI + Swift Package Manager Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/iOS/SwiftUI): demonstrates how to integrate the ReadyRemit SDK into an iOS app using SwiftUI.
 
 ### Android Examples
 
-- [XML Example](https://github.com/BrightwellPayments/readyremit-sdk-example-apps/tree/main/Android/XML): demonstrates how to integrate the ReadyRemit SDK into an Android app using Kotlin.
-- [Compose Example](https://github.com/BrightwellPayments/readyremit-sdk-example-apps/tree/main/Android/Compose): demonstrates how to integrate the ReadyRemit SDK into an Android app using Kotlin and Jetpack Compose.
+- [XML Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/Android/XML): demonstrates how to integrate the ReadyRemit SDK into an Android app using Kotlin.
+- [Compose Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/Android/Compose): demonstrates how to integrate the ReadyRemit SDK into an Android app using Kotlin and Jetpack Compose.
 
 ### React Native Example
 
-- [React Native Example](https://github.com/BrightwellPayments/readyremit-sdk-example-apps/tree/main/ReactNative): demonstrates how to integrate the ReadyRemit SDK into a React Native app.
-- [Expo React Native Example](https://github.com/BrightwellPayments/readyremit-sdk-example-apps/tree/main/Expo): demonstrates how to integrate the ReadyRemit SDK into a Expo React Native app.
+- [React Native Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/ReactNative): demonstrates how to integrate the ReadyRemit SDK into a React Native app.
+- [Expo React Native Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/Expo): demonstrates how to integrate the ReadyRemit SDK into a Expo React Native app.
 
 ## Conclusion
 
-We appreciate your consideration of ReadyRemit as your global remittance solution. We hope these examples provide a useful starting point for integrating the ReadyRemit SDK into your app. If you have any questions or feedback, please contact us at [support@readyremit.com](mailto:support@readyremit.com).
+We appreciate your consideration of ReadyRemit as your global remittance solution. We hope these examples provide a useful starting point for integrating the ReadyRemit SDK into your app. If you have any questions or feedback, please contact us at [support@paymitto.com](mailto:support@paymitto.com).
