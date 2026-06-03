@@ -92,9 +92,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.brightwell.readyremit.expo.example'
+    namespace 'com.paymitto.expo.example'
     defaultConfig {
-        applicationId 'com.brightwell.readyremit.expo.example'
+        applicationId 'com.paymitto.expo.example'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1

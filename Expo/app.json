@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ReadyRemit Expo Example",
-    "slug": "ReadyRemitExpoExample",
+    "name": "PayMitto Expo Example",
+    "slug": "PayMittoExpoExample",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,10 +13,10 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.brightwell.readyremit.expo.example"
+      "bundleIdentifier": "com.paymitto.expo.example"
     },
     "android": {
-      "package": "com.brightwell.readyremit.expo.example",
+      "package": "com.paymitto.expo.example",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -29,7 +29,7 @@
     },
     "plugins": [
       "expo-dev-client",
-      "react-native-ready-remit-sdk/plugin/with-readyremit-sdk",
+      "react-native-paymitto-sdk/plugin/with-paymitto-sdk",
       [
         "expo-build-properties",
         {

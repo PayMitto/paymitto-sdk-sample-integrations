@@ -1,4 +1,4 @@
-require_relative '../node_modules/react-native-ready-remit-sdk/ios/embed_readyremit'
+require_relative '../node_modules/react-native-paymitto-sdk/ios/embed_paymitto'
 source 'https://cdn.cocoapods.org/'
 require File.join(File.dirname(`node --print "require.resolve('expo/package.json')"`), "scripts/autolinking")
 require File.join(File.dirname(`node --print "require.resolve('react-native/package.json')"`), "scripts/react_native_pods")
@@ -22,7 +22,7 @@ platform :ios, podfile_properties['ios.deploymentTarget'] || '15.1'
 
 prepare_react_native_project!
 
-target 'ReadyRemitExpoExample' do
+target 'PayMittoExpoExample' do
   use_expo_modules!
 
   if ENV['EXPO_USE_COMMUNITY_AUTOLINKING'] == '1'
@@ -57,7 +57,7 @@ target 'ReadyRemitExpoExample' do
   )
 
   post_install do |installer|
-    embed_readyremit_framework!(installer)
+    embed_paymitto_framework!(installer)
     react_native_post_install(
       installer,
       config[:reactNativePath],
