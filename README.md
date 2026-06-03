@@ -29,7 +29,6 @@ This repository contains examples of how to integrate the ReadyRemit SDK into yo
 
 ### Android Examples
 
-- [XML Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/Android/XML): demonstrates how to integrate the ReadyRemit SDK into an Android app using Kotlin.
 - [Compose Example](https://github.com/PayMitto/paymitto-sdk-sample-integrations/tree/main/Android/Compose): demonstrates how to integrate the ReadyRemit SDK into an Android app using Kotlin and Jetpack Compose.
 
 ### React Native Example
