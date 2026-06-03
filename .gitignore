@@ -1,1 +1,12 @@
+# macOS
 .DS_Store
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+
+# Per-platform ignores live in each sample's own .gitignore
+# (Android/*, iOS/*, ReactNative/, Expo/)
