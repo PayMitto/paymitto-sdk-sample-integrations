@@ -112,8 +112,6 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
-				B2D4AE8962F250ABE2CA86C1 /* [ReadyRemit] Embed SPM Framework */,
-				24A49946F741BDD8FB14BABE /* [ReadyRemit] Embed SPM Frameworks */,
 				80B31DDDF029E773E17D016D /* [PayMitto] Embed SPM Frameworks */,
 			);
 			buildRules = (
@@ -203,24 +201,6 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PayMittoReactNativeSample/Pods-PayMittoReactNativeSample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		24A49946F741BDD8FB14BABE /* [ReadyRemit] Embed SPM Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[ReadyRemit] Embed SPM Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "DEST=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nFRAMEWORKS=(\"ReadyRemitSDK\" \"VisaSensoryBranding\")\n\nmkdir -p \"$DEST\"\n\nfor FWNAME in \"${FRAMEWORKS[@]}\"; do\n  # Search in multiple locations where SPM may place built frameworks\n  SRC=\"\"\n  for SEARCH_DIR in \\\n    \"${BUILT_PRODUCTS_DIR}/PackageFrameworks\" \\\n    \"${BUILT_PRODUCTS_DIR}\" \\\n    \"${BUILT_PRODUCTS_DIR}/RNReadyRemitSdk\" \\\n    \"${BUILT_PRODUCTS_DIR}/ReadyRemitSdk\"; do\n    if [ -d \"${SEARCH_DIR}/${FWNAME}.framework\" ]; then\n      SRC=\"${SEARCH_DIR}/${FWNAME}.framework\"\n      break\n    fi\n  done\n\n  if [ -z \"$SRC\" ]; then\n    echo \"warning: ${FWNAME}.framework not found — SDK may crash at launch.\"\n    continue\n  fi\n\n  rsync -av --delete \"$SRC\" \"$DEST/\"\n\n  if [ \"${CODE_SIGNING_REQUIRED:-}\" == \"YES\" ] && [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ]; then\n    /usr/bin/codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements \"${DEST}/${FWNAME}.framework\"\n  fi\ndone\n";
-		};
 		80B31DDDF029E773E17D016D /* [PayMitto] Embed SPM Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -238,24 +218,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "DEST=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\nFRAMEWORKS=(\"PayMittoSDK\" \"VisaSensoryBranding\")\n\nmkdir -p \"$DEST\"\n\nfor FWNAME in \"${FRAMEWORKS[@]}\"; do\n  # Search in multiple locations where SPM may place built frameworks\n  SRC=\"\"\n  for SEARCH_DIR in \\\n    \"${BUILT_PRODUCTS_DIR}/PackageFrameworks\" \\\n    \"${BUILT_PRODUCTS_DIR}\" \\\n    \"${BUILT_PRODUCTS_DIR}/RNPayMittoSdk\" \\\n    \"${BUILT_PRODUCTS_DIR}/PayMittoSdk\"; do\n    if [ -d \"${SEARCH_DIR}/${FWNAME}.framework\" ]; then\n      SRC=\"${SEARCH_DIR}/${FWNAME}.framework\"\n      break\n    fi\n  done\n\n  if [ -z \"$SRC\" ]; then\n    echo \"warning: ${FWNAME}.framework not found — SDK may crash at launch.\"\n    continue\n  fi\n\n  rsync -av --delete \"$SRC\" \"$DEST/\"\n\n  if [ \"${CODE_SIGNING_REQUIRED:-}\" == \"YES\" ] && [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ]; then\n    /usr/bin/codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements \"${DEST}/${FWNAME}.framework\"\n  fi\ndone\n";
-		};
-		B2D4AE8962F250ABE2CA86C1 /* [ReadyRemit] Embed SPM Framework */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[ReadyRemit] Embed SPM Framework";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# Embed ReadyRemitSDK.framework from SPM build products\nFWNAME=\"ReadyRemitSDK\"\nDEST=\"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\n# SPM frameworks may land in PackageFrameworks/ or directly in BUILT_PRODUCTS_DIR\nfor SEARCH in \"${BUILT_PRODUCTS_DIR}/PackageFrameworks\" \"${BUILT_PRODUCTS_DIR}\"; do\n  SRC=\"${SEARCH}/${FWNAME}.framework\"\n  if [ -d \"$SRC\" ]; then\n    mkdir -p \"$DEST\"\n    rsync -av --delete \"$SRC\" \"$DEST/\"\n    if [ \"${CODE_SIGNING_REQUIRED:-}\" == \"YES\" ] && [ -n \"${EXPANDED_CODE_SIGN_IDENTITY:-}\" ]; then\n      /usr/bin/codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" --preserve-metadata=identifier,entitlements \"${DEST}/${FWNAME}.framework\"\n    fi\n    exit 0\n  fi\ndone\necho \"warning: ${FWNAME}.framework not found in build products — SDK may crash at launch.\"\n";
 		};
 		C38B50BA6285516D6DCD4F65 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;

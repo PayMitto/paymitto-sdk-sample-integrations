@@ -18,6 +18,16 @@ import {
   type PayMittoError,
 } from 'react-native-paymitto-sdk';
 
+// SECURITY NOTE
+// --------------
+// This sample fetches the OAuth access token directly from the device using
+// CLIENT_SECRET, to keep the demo self-contained and easy to run. This is NOT
+// the pattern production apps should follow — shipping a client_secret in a
+// mobile bundle exposes it to anyone who inspects the binary or network traffic.
+//
+// In production, your mobile app should call YOUR backend, which performs the
+// OAuth client_credentials exchange against PayMitto and returns only the
+// access_token to the device. Keep CLIENT_SECRET on the server side only.
 const SENDER_ID = '<SENDER_ID>';
 const CLIENT_ID = '<CLIENT_ID>';
 const CLIENT_SECRET = '<CLIENT_SECRET>';
