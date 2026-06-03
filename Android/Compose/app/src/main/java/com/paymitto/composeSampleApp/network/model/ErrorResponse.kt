@@ -1,4 +1,4 @@
-package com.paymitto.readyremit.androisample.network.model
+package com.paymitto.composeSampleApp.network.model
 
 import com.squareup.moshi.JsonClass
 

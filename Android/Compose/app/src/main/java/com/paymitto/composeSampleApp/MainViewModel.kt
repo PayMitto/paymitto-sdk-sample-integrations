@@ -2,11 +2,11 @@ package com.paymitto.composeSampleApp
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.paymitto.composeSampleApp.network.ReadyRemitService
+import com.paymitto.composeSampleApp.network.PaymittoSampleService
 import com.paymitto.composeSampleApp.network.model.AuthRequest
 import com.paymitto.composeSampleApp.network.model.ReadQuoteDetailsResponse
 import com.paymitto.composeSampleApp.network.model.TransferRequest
-import com.paymitto.readyremit.androisample.network.model.ErrorResponse
+import com.paymitto.composeSampleApp.network.model.ErrorResponse
 import com.paymitto.android.sdk.AccessTokenDetails
 import com.paymitto.android.sdk.AuthenticationResult
 import com.paymitto.android.sdk.Localization
@@ -41,7 +41,7 @@ class MainViewModel : ViewModel() {
 
     private var tokenValue: String = ""
 
-    private val service: ReadyRemitService by lazy {
+    private val service: PaymittoSampleService by lazy {
         Retrofit.Builder().baseUrl("https://sandbox-api.readyremit.com")
             .client(
                 OkHttpClient.Builder()
@@ -51,7 +51,7 @@ class MainViewModel : ViewModel() {
                     .build()
             )
             .addConverterFactory(MoshiConverterFactory.create())
-            .build().create(ReadyRemitService::class.java)
+            .build().create(PaymittoSampleService::class.java)
     }
 
     fun createSdkConfig(): PayMittoConfiguration {
@@ -111,7 +111,7 @@ class MainViewModel : ViewModel() {
             submitTransfer = { transferRequest ->
                 try {
                     val quoteDetails = readQuoteDetails(transferRequest.quoteHistoryId)
-                    return@PayMittoConfiguration submitReadyRemitTransfer(
+                    return@PayMittoConfiguration submitPayMittoTransfer(
                         transferRequest = transferRequest,
                         quoteDetails = quoteDetails
                     )
@@ -142,7 +142,7 @@ class MainViewModel : ViewModel() {
             url = "https://sandbox-api.readyremit.com/v1/quote/$quoteHistoryId",
             token = "Bearer $tokenValue",
             acceptLanguage = PayMitto.getSdkLanguageLocale()?.getLocalizationForApi()
-                ?: Localization.enUS.getLocalizationForApi(), // or the language you set in ReadyRemitConfiguration
+                ?: Localization.enUS.getLocalizationForApi(), // or the language you set in PayMittoConfiguration
             contentType = "application/json"
         )
 
@@ -162,7 +162,7 @@ class MainViewModel : ViewModel() {
         }
     }
 
-    private suspend fun submitReadyRemitTransfer(
+    private suspend fun submitPayMittoTransfer(
         transferRequest: PayMittoTransferRequest,
         quoteDetails: ReadQuoteDetailsResponse
     ): TransferSubmissionResult {

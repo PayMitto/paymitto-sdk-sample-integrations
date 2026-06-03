@@ -86,7 +86,7 @@ internal fun HomeView(
                 }
             }
         ) {
-            Text("Start ReadyRemitSDK")
+            Text("Start PayMittoSDK")
         }
     }
 }
