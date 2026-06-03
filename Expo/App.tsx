@@ -9,14 +9,14 @@ import {
 } from 'react-native';
 import {
   startSDK,
-  ReadyRemitEnvironment,
-  ReadyRemitSupportedAppearance,
-  ReadyRemitLocalization,
-  type ReadyRemitConfiguration,
-  type ReadyRemitTokenResponse,
-  type ReadyRemitTransferRequest,
-  type ReadyRemitError,
-} from 'react-native-ready-remit-sdk';
+  PayMittoEnvironment,
+  PayMittoSupportedAppearance,
+  PayMittoLocalization,
+  type PayMittoConfiguration,
+  type PayMittoTokenResponse,
+  type PayMittoTransferRequest,
+  type PayMittoError,
+} from 'react-native-paymitto-sdk';
 
 const SENDER_ID = '<SENDER_ID>';
 const CLIENT_ID = '<CLIENT_ID>';
@@ -25,10 +25,10 @@ const CLIENT_SECRET = '<CLIENT_SECRET>';
 const AUTH_URL = 'https://sandbox-api.readyremit.com/v1/oauth/token';
 const AUTH_AUDIENCE = 'https://sandbox-api.readyremit.com';
 
-const sdkConfiguration: ReadyRemitConfiguration = {
-  environment: ReadyRemitEnvironment.Sandbox,
-  supportedAppearance: ReadyRemitSupportedAppearance.Device,
-  localization: ReadyRemitLocalization.EN_US,
+const sdkConfiguration: PayMittoConfiguration = {
+  environment: PayMittoEnvironment.Sandbox,
+  supportedAppearance: PayMittoSupportedAppearance.Device,
+  localization: PayMittoLocalization.EN_US,
   appearance: {
     foundations: {
       colorPrimary: { light: '#2563EB', dark: '#558CF4' },
@@ -51,7 +51,7 @@ const sdkConfiguration: ReadyRemitConfiguration = {
 };
 
 async function fetchAccessTokenDetails(): Promise<
-  ReadyRemitTokenResponse | ReadyRemitError
+  PayMittoTokenResponse | PayMittoError
 > {
   try {
     const response = await fetch(AUTH_URL, {
@@ -100,7 +100,7 @@ export default function App() {
       configuration: sdkConfiguration,
       fetchAccessTokenDetails,
       verifyFundsAndCreateTransfer: async (
-        request: ReadyRemitTransferRequest,
+        request: PayMittoTransferRequest,
       ) => {
         Alert.alert('Transfer Request', JSON.stringify(request, null, 2));
         return { transferId: `sample-${Date.now()}` };
@@ -117,11 +117,11 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.content}>
-        <Text style={styles.title}>ReadyRemit SDK</Text>
-        <Text style={styles.subtitle}>Expo Example</Text>
+        <Text style={styles.title}>PayMitto SDK</Text>
+        <Text style={styles.subtitle}>Expo Sample</Text>
         <Text style={styles.status}>{sdkStatus}</Text>
         <View style={styles.buttonContainer}>
-          <Button title="Launch ReadyRemit SDK" onPress={handleStartSDK} />
+          <Button title="Launch PayMitto SDK" onPress={handleStartSDK} />
         </View>
       </View>
     </SafeAreaView>
