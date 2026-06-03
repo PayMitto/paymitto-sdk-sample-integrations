@@ -4,7 +4,7 @@ import com.paymitto.composeSampleApp.network.model.AuthRequest
 import com.paymitto.composeSampleApp.network.model.AuthResponse
 import com.paymitto.composeSampleApp.network.model.ReadQuoteDetailsResponse
 import com.paymitto.composeSampleApp.network.model.TransferRequest
-import com.paymitto.readyremit.androisample.network.model.TransferResponse
+import com.paymitto.composeSampleApp.network.model.TransferResponse
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.GET
@@ -13,7 +13,7 @@ import retrofit2.http.Headers
 import retrofit2.http.POST
 import retrofit2.http.Url
 
-interface ReadyRemitService {
+interface PaymittoSampleService {
 
     @POST("/v1/oauth/token")
     @Headers("Content-Type: application/json")

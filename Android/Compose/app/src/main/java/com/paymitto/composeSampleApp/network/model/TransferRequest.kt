@@ -4,7 +4,7 @@ import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
 data class TransferRequest(
-    // properties from ReadyRemitTransferRequest
+    // properties from PayMittoTransferRequest
     val fields: List<Field>?,
     val quoteBy: String,
     val quoteHistoryId: String,
