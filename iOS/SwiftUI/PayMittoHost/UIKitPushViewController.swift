@@ -65,8 +65,10 @@ class UIKitPushViewController: UIViewController {
             guard let self else { return }
             Task {
                 await MainActor.run {
-                    if let payMittoItem = self.viewModel.payMittoItem {
-                        let hostingController = UIHostingController(rootView: AnyView(payMittoItem.view))
+                    if self.viewModel.payMittoItem != nil {
+                        let hostingController = UIHostingController(
+                            rootView: PayMittoSDKContainerView(viewModel: self.viewModel)
+                        )
                         hostingController.modalPresentationStyle = .fullScreen
                         self.navigationController?.pushViewController(hostingController, animated: true)
                     }

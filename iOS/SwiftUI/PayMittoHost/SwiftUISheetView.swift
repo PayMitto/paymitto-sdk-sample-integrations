@@ -14,8 +14,8 @@ struct SwiftUISheetView: View {
         Button("PayMitto SDK v11.0.0") {
             viewModel.showPayMittoSDK()
         }
-        .fullScreenCover(item: $viewModel.payMittoItem) {
-            AnyView($0.view)
+        .fullScreenCover(item: $viewModel.payMittoItem) { _ in
+            PayMittoSDKContainerView(viewModel: viewModel)
         }
         .navigationTitle("SwiftUI - Sheet")
     }

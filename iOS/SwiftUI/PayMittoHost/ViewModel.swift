@@ -16,9 +16,14 @@ class ViewModel {
     }
     
     var payMittoItem: PayMittoItem?
-    
+    var isPresentingChallenge = false
+    var challengeCode = ""
+
     private var authorizationValue: String?
-    
+    private var challengeContinuation: CheckedContinuation<String, Error>?
+
+    private static let expectedChallengeCode = "123456"
+
     func showPayMittoSDK() {
         PayMitto.shared.startSDK(
             configuration: .init(environment: .sandbox),
@@ -64,11 +69,50 @@ class ViewModel {
             throw PayMittoError(code: .none, message: "Failed to fetch access token details")
         }
     }
+
+    func submitChallenge() {
+        let continuation = challengeContinuation
+        challengeContinuation = nil
+        continuation?.resume(returning: challengeCode)
+    }
+
+    func cancelChallenge() {
+        let continuation = challengeContinuation
+        challengeContinuation = nil
+        continuation?.resume(
+            throwing: PayMittoError(
+                code: "challenge_cancelled",
+                message: "Challenge was cancelled."
+            )
+        )
+    }
     
+    private func requestChallengeCode() async throws(PayMittoError) -> String {
+        do {
+            return try await withCheckedThrowingContinuation { continuation in
+                challengeContinuation = continuation
+                challengeCode = ""
+                isPresentingChallenge = true
+            }
+        } catch let error as PayMittoError {
+            throw error
+        } catch {
+            throw PayMittoError(code: .none, message: "Error: \(error.localizedDescription)")
+        }
+    }
+
     private func verifyFundsAndCreateTransfer(
         transferRequest: TransferRequest
     ) async throws(PayMittoError) -> TransferDetails {
         do {
+            let enteredCode = try await requestChallengeCode()
+            guard enteredCode == Self.expectedChallengeCode else {
+                throw PayMittoError(
+                    code: "challenge_incorrect",
+                    message: "The challenge code you entered is incorrect."
+                )
+            }
+
             guard let url = URL(string: "\(Secrets.Sandbox.baseURL)/v1/quote/\(transferRequest.quoteHistoryId)") else {
                 throw URLError(.badURL)
             }
