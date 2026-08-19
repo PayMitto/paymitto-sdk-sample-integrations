@@ -408,7 +408,7 @@
 			repositoryURL = "https://github.com/PayMitto/paymitto-ios";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 11.0.0;
+				minimumVersion = 11.0.2;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

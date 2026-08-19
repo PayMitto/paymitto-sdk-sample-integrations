@@ -89,7 +89,7 @@ submitTransfer = { transferRequest ->
 Managed via Gradle version catalog (`gradle/libs.versions.toml`). The PayMitto SDK is pulled from Maven:
 
 ```kotlin
-implementation(libs.payMitto.sdk)  // com.paymitto.android:PayMittoSDK:11.0.0
+implementation(libs.payMitto.sdk)  // com.paymitto.android:PayMittoSDK:11.0.4
 ```
 
 ## Environment
