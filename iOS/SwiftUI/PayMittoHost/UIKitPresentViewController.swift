@@ -23,7 +23,7 @@ class UIKitPresentViewController: UIViewController {
         }
         
         let button = UIButton(primaryAction: action)
-        button.setTitle("PayMitto SDK v11.0.2", for: .normal)
+        button.setTitle("PayMitto SDK v11.0.3", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.titleLabel?.font = .preferredFont(forTextStyle: .body)
         button.titleLabel?.adjustsFontForContentSizeCategory = true

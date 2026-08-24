@@ -11,7 +11,7 @@ struct SwiftUISheetView: View {
     @State private var viewModel: ViewModel = .init()
     
     var body: some View {
-        Button("PayMitto SDK v11.0.2") {
+        Button("PayMitto SDK v11.0.3") {
             viewModel.showPayMittoSDK()
         }
         .fullScreenCover(item: $viewModel.payMittoItem) {

@@ -143,7 +143,7 @@ platform :ios, '17.0'
 
 target 'PayMittoHost' do
   use_frameworks!
-  pod 'PayMittoSDK', :git => 'https://github.com/PayMitto/paymitto-ios.git', :tag => '11.0.2'
+  pod 'PayMittoSDK', :git => 'https://github.com/PayMitto/paymitto-ios.git', :tag => '11.0.3'
 end
 ```
 
